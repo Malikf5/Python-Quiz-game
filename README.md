@@ -24,3 +24,5 @@ Potential Improvements:
 - Add animations
 - Add pictures
 - Change the background to something else
+- Sound effects
+- Background music
