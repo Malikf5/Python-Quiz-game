@@ -3,7 +3,7 @@
 It's still a work in progress, I want there to be at least 10 questions for each difficulty category totaling 150 questions.
 
 The categories are as follows:
-- **Harry Potter**
+- *Harry Potter*
 - **Science**
 - **Gaming**
 - **Anime**
