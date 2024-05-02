@@ -10,7 +10,7 @@ The categories are as follows:
 - Mythology
 
 While the difficuly levels are a choice between:
-- Easy
+- **Easy**
 - Medium
 - Hard
 
