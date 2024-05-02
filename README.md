@@ -26,3 +26,4 @@ Potential Improvements:
 - Change the background to something else
 - Sound effects
 - Background music
+- Question randomization so that they don't start in the same order each time
