@@ -3,16 +3,16 @@
 It's still a work in progress, I want there to be at least 10 questions for each difficulty category totaling 150 questions.
 
 The categories are as follows:
-- Harry Potter
-- Science
-- Gaming
-- Anime
-- Mythology
+- **Harry Potter**
+- **Science**
+- **Gaming**
+- **Anime**
+- **Mythology**
 
 While the difficuly levels are a choice between:
 - **Easy**
-- Medium
-- Hard
+- **Medium**
+- **Hard**
 
 Potential Improvements:
 
