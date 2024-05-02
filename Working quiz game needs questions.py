@@ -174,9 +174,9 @@ questions = {
             {"question": "In the National Pokedex, what Pokemon is #708?", "options":["Amaura","Phantump","Avalugg","Pumpkaboo","Goomy","Noivern"], "correct_index": 1},
             {"question": "Which character serves as the commisioner/referee in the Backyard Sports video game series, overseeing various sports competitions among neighborhood kids?", "options":["Pablo Sanchez","Ricky Johnson","Annie Frazier","Kenny","Reese","Mr. Clanky","Mikey Thomas"], "correct_index":5},
             {"question": "In Persona 5: Royal, what is the name of the new confidant introduced exclusively in this version, who is a counselor at Shujin Academy?", "options":["Kasumi Yoshizawa","Ichiko Ohya","Takuto Maruki","Sadayo Kawakami"], "correct_index":2 },
-##            {"question": "", "options":["","","",""], "correct_index": },
-##            {"question": "", "options":["","","",""], "correct_index": },
-##            {"question": "", "options":["","","",""], "correct_index": },
+            {"question": "In the Spongebob Squarepants Movie game for Gameboy Advance, what is the first level called?", "options":["Manager Material","Manager Ahoy","I'm Ready","Manager Ready","The Krusty Krab 2"], "correct_index":0 },
+            {"question": "In the Gameboy Advance version of Yu-Gi-Oh! World Championship Tournament 2004, which character is featured on the right side of the cover?", "options":["Tea","Tristan","Bakura","Marik","Joey","Rare Hunter","Arcana","Yami Yugi(Atem)"], "correct_index": 4},
+            {"question": "In the mobile game Dragon Ball Z: Dokkan Battle, what LR characters were released for the 4th year Anniversarry", "options":["SSB Goku/Vegeta","UI Goku/Evo Blue Vegeta","SSJ4 Goku/Vegeta","Goku/SSJ4 Vegeta","Beast Gohan/Orange Piccolo","Gamma #1/Gamma #2","SSJ Broly/SSB Gogeta"], "correct_index":2},
         ]
     },
     "Science": {
@@ -226,14 +226,14 @@ def select_category(cat):
     show_difficulty_buttons()
     
 def select_difficulty(diff):
-    print("Working select difficulty")
+    #print("Working select difficulty")
     global difficulty
     difficulty = diff
     hide_difficulty_buttons()
     start_quiz()
 
 def hide_category_buttons():
-    print("Working hide category")
+    #print("Working hide category")
     harry_potter_button.pack_forget()
     mythology_button.pack_forget()
     anime_button.pack_forget()
@@ -241,13 +241,13 @@ def hide_category_buttons():
     science_button.pack_forget()
 
 def hide_difficulty_buttons():
-    print("Working hide difficulty")
+    #print("Working hide difficulty")
     easy_button.pack_forget()
     medium_button.pack_forget()
     hard_button.pack_forget()
 
 def show_category_buttons():
-    print("Working show category")
+    #print("Working show category")
     harry_potter_button.pack(side="top",padx= 50, pady=10, anchor='center')
     mythology_button.pack(side="top",padx= 50, pady=10, anchor='center')
     anime_button.pack(side="top",padx= 50, pady=10, anchor='center')
@@ -256,14 +256,14 @@ def show_category_buttons():
 
 def show_difficulty_buttons():
     global category, difficulty, score, questions_answered, current_question, current_question_index, questions, option_buttons, easy_button, medium_button, hard_button
-    print("Working show difficulty")
+    #print("Working show difficulty")
     easy_button.pack(side="top", anchor ="center", padx=50, pady=10, fill='x')
     medium_button.pack(side="top",anchor ="center", padx=50, pady=10 ,fill='x')
     hard_button.pack(side="top", anchor ="center", padx=50, pady=10 ,fill='x')
     
 def start_quiz():
     global questions_answered, score, options_buttons
-    print("Start Quiz")
+    #print("Start Quiz")
     questions_answered = 0
     score = 0
     score_label.config(text="Score: 0")
@@ -329,7 +329,7 @@ def next_question():
         
 def check_answer(answer):
     global score, questions_answered, category, difficulty, current_question
-    print("Check answer working")
+    #print("Check answer working")
     if current_question is not None:
         correct_index = current_question["correct_index"]
         if answer == correct_index:
@@ -348,8 +348,8 @@ def check_answer(answer):
 
 def show_end_game_options():
     messagebox.showinfo("Quiz Finished", f"Your final score is: {score}")
-    choice = messagebox.askquestion("End Game", "Do you want to play again?")
-    if choice == "yes":
+    choice = messagebox.askquestion("Game Over", "Do you want to play again?")
+    if choice == "Of course, my good squire":
         reset_game()
     else:
         root.destroy()
