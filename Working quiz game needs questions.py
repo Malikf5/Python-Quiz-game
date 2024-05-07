@@ -205,7 +205,7 @@ questions = {
             {"question": "What does DNA stand for?", "options":["Deoxyribonucleic Acid","Double Nitrogen Atom","Dynamic Nucleotide Assembly","Digital Neural Algorithm"], "correct_index": 0},
         ],
         "Hard": [
-            {"question": "Which organelle is responsible for protein synthesis in eukaryotic cells?", "options":["Mitochondria","Golgi Apparatus","Endoplasmic Reticulu,","Ribosome","Nucleus","Cytoskeleton"], "correct_index":3 },
+            {"question": "Which organelle is responsible for protein synthesis in eukaryotic cells?", "options":["Mitochondria","Golgi Apparatus","Endoplasmic Reticulu","Ribosome","Nucleus","Cytoskeleton"], "correct_index":3 },
             {"question": "What is the name of the region surrounding a black hole where the gravitational pull is so strong that nothing can escape?", "options":["Event Horizon","Accretion Disk","Photon Sphere","Singularity","Gravity Well"], "correct_index": 0},
             {"question": "Which of the following is NOT a type of soil horizon found in a soil profile?", "options":["Topsoil","Subsoil","Bedrock","Parent Material"], "correct_index": 2},
             {"question": "Which gas is produced during the process of anaerobic respiration in humans?", "options":["Oxygen","Nitrogen","Carbon Dioxide","Methane","Carbon Monoxide"], "correct_index": 3},
