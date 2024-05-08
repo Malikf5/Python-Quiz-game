@@ -305,7 +305,7 @@ def next_question():
         if questions_list:
             if current_question_index < len(questions_list):
                 current_question = questions_list[current_question_index]
-                print(current_question)
+                #print(current_question)
                 question_label.config(text=current_question["question"])
                 
                 # Clear existing option buttons
@@ -319,7 +319,7 @@ def next_question():
                     option_buttons.append(button)
                 
                 current_question_index += 1  # Increment here
-                print(current_question_index)
+                #print(current_question_index)
             else:
                 show_end_game_options()
         else:
@@ -341,15 +341,15 @@ def check_answer(answer):
         else:
             next_question()
     else:
-        print(category)
-        print(difficulty)
-        print(current_question)
+        #print(category)
+        #print(difficulty)
+        #print(current_question)
         messagebox.showerror("No Question", "No question to answer. Please select a category and difficulty first.")
 
 def show_end_game_options():
     messagebox.showinfo("Quiz Finished", f"Your final score is: {score}")
     choice = messagebox.askquestion("Game Over", "Do you want to play again?")
-    if choice == "Of course, my good squire":
+    if choice == "yes":
         reset_game()
     else:
         root.destroy()
